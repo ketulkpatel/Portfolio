@@ -1,0 +1,415 @@
+<html>
+<head>
+	<div class="home"></div>
+	<title>My Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" type="text/css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css" type="text/css">
+	<link rel="stylesheet" href="fontawesome-free-5.0.13/font-awesome/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+	<script>
+	function myFunction() 
+	{
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") 
+		{
+			x.className += " responsive";
+		} 
+		else 
+		{
+			x.className = "topnav";
+		}
+	}
+	
+	
+</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#home").click(function(){
+				$path=$(".home").offset().top;
+				$('body').animate({scrollTop:$path},1500);
+			});
+			$("#foot").click(function(){
+				$path=$(".home").offset().top;
+				$('body').animate({scrollTop:$path},1500);
+			});
+			$("#logo").click(function(){
+				$path=$(".home").offset().top;
+				$('body').animate({scrollTop:$path},1500);
+			});
+			$("#about").click(function(){
+				$path=$(".about").offset().top;
+				$('body').animate({scrollTop:$path},1500);
+			});
+			$("#education").click(function(){
+				$path=$(".education").offset().top;
+				$('body').animate({scrollTop:$path},1500);
+			});
+			$("#skills").click(function(){
+				$path=$(".skills").offset().top;
+				$('body').animate({scrollTop:$path},1500);
+			});
+			
+			$("#contact").click(function(){
+				$path=$(".contact").offset().top;
+				$('body').animate({scrollTop:$path},1500);
+			});
+		});
+		
+	</script>
+<style>
+	body
+	{
+		font-family: 'Montserrat', sans-serif;
+	}
+</style>
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="titel">
+		<section class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="logo">
+							<a href="#home" id="logo"><img src="images/kplogo.png"></a>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="topnav" id="myTopnav">
+							<a href="#home" id="home">Home</a>
+							<a href="#about" id="about">About-me</a>
+							<a href="#education" id="education">Education</a>
+							<a href="#skills" id="skills">Skills</a>
+							<a href="#contact" id="contact">Contact</a>
+							<a href="javascript:void(0);" style="font-size:15px;color:white;" class="icon" onclick="myFunction()">&#9776;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="middle">
+			<div class="container">
+				<div class="row">
+					<div class="inside-titel">
+						<div class="col-md-15">
+							<div class="hello">Hello !</div>
+						</div>
+						<div class="col-md-15">
+							<div class="name">I AM KETUL PATEL</div>
+						</div>
+						<div class="col-md-15``">
+							<div class="it">IT ENGINEER</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+		<section class="about">
+			<div class="container">
+				<div class="extra">
+				<h2 class="text-center">About-me</h2>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="myimg">
+								<img src="images/main-user.png" class="img-rounded" alt="Kishan Patel">
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="mydetail">
+								<div class="table-responsive">
+									<table class="table">
+										<tr> <th>Name </th> <th> Ketul Patel</th> </tr>
+										<tr> <th>Address</th> <th> <p class="address"> A/201 Aasthaa emerald, <br>Behind ranna park bus stand, <br>Ghatlodia, 
+											<br>Ahmedabad-380061 </p> </th> </tr>
+										<tr> <th>Date of Birth</th> <th> 6<sup>th</sup> May, 2000  </th> </tr>
+										<tr> <th>Sex</th> <th>Male</th> </tr>
+										<tr> <th>Marital Status</th> <th>Unmarried</th> </tr>
+										<tr> <th>Nationality</th> <th>Indian</th> </tr>
+										<tr> <th>Languages Known</th> <th>English, Hindi, Gujarati</th> </tr>
+										<tr> <th>E-mail</th> <th>ketulpatel455@gmaio.com</th> </tr>
+										<tr> <th>Contact</th> <th>+91-9898495408</th> </tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="text-right"><a href="resume/resume.pdf" download>Download Resume</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+		<section class="education">
+			<div class="container">
+				<div class="extra">
+					<h2 class="text-center" id="edu">Education</h2>
+				
+					
+									
+											
+												
+										
+						<div class="table-responsive">
+								<table class="table table-dark table-striped table-hover">
+									<tr><th> </th><th class="text-center" colspan=2>   SCHOOL EDUCATION</th><th>COLLEGE EDUCATION</th></tr>														
+									<tr><th>School Name</th><td>Shree VidyaNagar High School<br><a href="https://www.shreevidyanagarschool.org/" target="_blank" class="link">SVHS,A'BAD<i class="fa fa-link"></i></a></td><td>Shree VidyaNagar High School<br><a href="https://www.shreevidyanagarschool.org/" target="_blank" class="link">SVHS,A'BAD</a></th><td>Dharmsinh Desai University<br><a href="https://www.ddu.ac.in/" target="_blank" class="link">DDIT,NADIAD</a></td></tr>	
+									<tr><th>Passing Year</th><td>2014-15</td><td>2016-2017</td><td>2021</td>
+									<tr><th>Board</th><td>GSHEB,Ghandhinagar</td><td>GSHEB,Ghandhinagar</td><td>Dharmsinh Desai University</td>
+									<tr><th>Degree</th><td>10<sup>th</sup> Standard</td><td>12<sup>th</sup>Science</td><td>Bachelor Of Engineering In Information Technology</td></tr>	
+									
+									
+
+								</table>
+								
+						</div>		
+			<div class="tbl">					
+				<div class="row">
+						<div class="col-md-4">
+
+								<div class="tbl1">
+										<div class="table-responsive">
+											<table class="table table-borderless">
+												<tr><th colspan=4 class="text-center" id="table-head">MARKS OF 10<sup>th</sup></th></tr> 
+												<tr> <th id="table-head2">Subject</th> <th id="table-head2">Total Marks</th> <th id="table-head2">Obtained Marks</th> <th id="table-head2">Grade</th> </tr>
+												
+												<tr> <td id="table-head2">Gujarati</td> <td id="table-head2">100</td> <td id="table-head2">77</td> <td id="table-head2">B1</td> </tr>
+												
+												<tr> <td id="table-head2">Social Science</td> <td id="table-head2">100</td> <td id="table-head2">87</td> <td id="table-head2">A2</td> </tr>
+												
+												<tr> <td id="table-head2">Mathematics</td> <td id="table-head2">100</td> <td id="table-head2">95</td> <td id="table-head2">A1</td> </tr>
+												
+												<tr> <td id="table-head2">English</td> <td id="table-head2">100</td> <td id="table-head2">81</td> <td id="table-head2">A2</td> </tr>
+												
+												<tr> <td id="table-head2">Science & Technology</td> <td id="table-head2">100</td> <td id="table-head2">90</td> <td id="table-head2">A2</td> </tr>
+											</table>
+										</div>
+									</div>
+							
+						</div>
+
+						<div class="col-md-4">
+								<div class="tbl1">
+										<div class="table-responsive">
+											<table class="table table-borderless">
+												<tr><th colspan=4 class="text-center" id="table-head">MARKS OF 12<sup>th</sup></th></tr>	
+												<tr> <th id="table-head2">Subject</th> <th id="table-head2">Total Marks</th> <th id="table-head2">Obtained Marks</th> <th id="table-head2">Grade</th> </tr>
+												
+												<tr> <td id="table-head2">Mathematics</td> <td id="table-head2">100</td> <td id="table-head2">88</td> <td id="table-head2"> A2</td> </tr>
+												
+												<tr> <td id="table-head2">Chemistry</td> <td id="table-head2">100</td> <td id="table-head2">85</td> <td id="table-head2">A2</td> </tr>
+												
+												<tr> <td id="table-head2">Physics</td> <td id="table-head2">100</td> <td id="table-head2">85</td> <td id="table-head2">A2</td> </tr>
+											</table>
+										</div>
+									</div>
+						</div>
+							<div class="col-md-4">
+								<div class="tbl1">
+										<div class="table-responsive">
+											<table class="table table-borderless">
+												<tr><th colspan=3 class="text-center" id="table-head">MARKS OF B.TECH</th></tr>	
+												<tr> <th rowspan=2 id="table-head2" class="text-center" >Semester</th> <th colspan="2" class="text-center" id="table-head2">Grade</th> </tr>
+												
+												<tr><th id="table-head2">SPI</th> <th id="table-head2">CPI</th>  </tr>
+												
+												<tr> <td id="table-head2"> 1<sup>th</sup></td> <td id="table-head2">7.85</td> <td id="table-head2">7.85</td> </tr>
+												
+												<tr> <td id="table-head2"> 2<sup>th</sup></td> <td id="table-head2">8.52</td> <td id="table-head2">8.18</td> </tr>
+											
+												<tr> <td id="table-head2"> 3<sup>th</sup></td> <td id="table-head2">8.4</td> <td id="table-head2">8.4</td>  </tr>
+												
+												<tr> <td id="table-head2"> 4<sup>th</sup></td> <td id="table-head2">8.33</td> <td id="table-head2">8.37</td> </tr>
+												
+												<tr> <td id="table-head2"> 5<sup>th</sup></td> <td id="table-head2">-</td> <td id="table-head2">-</td></tr>
+												
+												<tr> <td id="table-head2"> 6<sup>rd</sup></td> <td id="table-head2">-</td> <td id="table-head2">-</td> </tr>
+												
+												<tr> <td id="table-head2"> 7<sup>nd</sup></td> <td id="table-head2">-</td> <td id="table-head2">-</td></tr>
+												
+												<tr> <td id="table-head2"> 8<sup>st</sup></td> <td id="table-head2">-</td> <td id="table-head2">-</td></tr>
+											</table>
+										</div>
+									</div>
+
+							</div>
+
+
+
+
+
+
+
+				</div>			
+
+
+			</div>
+									
+									
+							
+								
+					
+			
+					
+
+				</div>
+			</div>
+		</section>
+		
+		<section class="skills">
+			<h2 class="text-center">Skills</h2>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="professional">
+								<h3 class="text-center">Technical Skills</h3><br>
+									<p>Python</p>
+									<div class="html">
+										75%
+									</div>
+									<p>Html</p>
+									<div class="css">
+										50%
+									</div>
+									<p>CSS</p>
+									<div class="css">
+										50%
+									</div>
+									<p>Javascript</p>
+									<div class="css">
+										50%
+									</div>
+									<p>Deep learning</p>
+									<div class="php">
+										70%
+									</div>
+									
+									<p>Flask</p>
+									<div class="sql">
+										68%
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="container">
+					<h3 class="text-center">Soft Skills</h3><br>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="softleft">Confident and Determine</div>
+							</div>
+							<div class="col-md-4">
+								<div class="softmid">Public speaking and emotional intellegence</div>
+							</div>
+							<div class="col-md-4">
+								<div class="softright">Time management</div>
+							</div>
+						</div>
+				</div>
+				
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="soft">
+								<h3 class="text-center">Hobbies</h3>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="sports">
+												<p>Sports</p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="travelling">
+												<p>Travelling</p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="music">
+												<p>Music</p>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		
+		
+		
+		<section class="Contact">
+			<div class="container">
+				<div class="extra">
+				<h2 class="text-center">Contact</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<form class="form">
+								<div class="form-group">
+									<i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; Name
+									<br><input type="text" class="form-control" name="name" placeholder="Name">
+								</div>
+								<div class="form-group">
+									<i class="fa fa-question-circle"></i>&nbsp;&nbsp; Subject
+									<br><input type="text" class="form-control" name="subject" placeholder="Subject">
+								</div>
+								<div class="form-group">
+									<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; E-mail
+									<br><input type="email" class="form-control" name="email" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;&nbsp; Message 
+									<br><textarea rows="5" class="form-control" name="message" placeholder="Message"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="reset" class="btn btn-primary" name="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+						<div class="col-md-6">
+							<div class="social">
+								<div class="table-responsive">
+									<table class="table">
+										<tr> <th><i class="fa fa-envelope" aria-hidden="true"></i></th> <th> / ketulpatel455@gmail.com</a></th> </tr>
+										<tr> <th><i class="fa fa-facebook" aria-hidden="true"></i></th> <th> / Ketul Patel(KP)</a></th> </tr>
+										<tr> <th><i class="fa fa-instagram" aria-hidden="true"></i></i></th> <th> / the_ketul_patel</a></th> </tr>
+										<tr> <th><i class="fa fa-whatsapp" aria-hidden="true"></i></th> <th> / +91-9898495408</a></th> </tr>
+										
+									</table>
+								</div>
+								  
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="text-center">&copy Design and Created by <a href="#home" id="foot">Ketul Patel</a></h3>
+					</div>
+				</div>
+			</div>
+		</section>
+</div>
+
+</body>
+</html>

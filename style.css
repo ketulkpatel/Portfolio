@@ -1,0 +1,682 @@
+body
+{
+	margin-bottom: 12%;
+	font-family: 'Montserrat', sans-serif;	
+}
+
+
+
+
+/* ====================Header====================== */
+
+
+.header
+{
+	animation : fadein 1.5s;
+	background-image : linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/main-background.jpg);
+	background-position : center;
+	background-size : cover;
+	background-attachment : fixed;
+	width : 98.5%;
+	padding-bottom :4.5%;
+	z-index : 1;
+	position : fixed;
+	
+}
+
+
+/* ===========================logo ===============================*/
+
+.logo
+{
+	margin-top : 0.5%;
+	margin-bottom : 1%;
+	
+	display : block;
+}
+
+.logo img
+{
+	height : 50px;
+	width : 75px;
+}
+
+
+
+/* ============================top nav ============================*/
+
+
+.topnav 
+{
+	overflow: hidden;
+	margin-top : 1%;
+	padding-bottom : 1%;
+	
+}
+
+.topnav a 
+{
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 10px 25px;
+	text-decoration: none;
+	font-size: 15pt;
+	margin-left : 0%;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+
+.topnav a:hover
+{
+	color: white;
+	text-decoration : none;
+}
+.topnav a:visited
+{
+	color : white;
+	text-decoration : none;
+}
+.topnav a:active
+{
+	color : white;
+	text-decoration : none;
+}
+
+.topnav a:after
+{
+	background-color : white;
+	content : " ";
+	width : 45px;
+	height : 2px;
+	display : none;
+	margin : 4px auto;
+}
+
+.topnav a:hover:after
+{
+	display : block;
+	animation : animateanchor 0.3s;
+}
+
+@keyframes animateanchor
+{
+	from {width : 0px;}
+	to {width : 45px;}
+}
+
+@media screen and (max-width: 600px) 
+{
+	.logo
+	{
+		display : none;
+	}
+	.topnav a
+	{
+		display: none;
+	}
+	.topnav a.icon 
+	{
+		float: left;
+		display: block;
+		text-decoration : none;
+		background-image : linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/main-background.jpg);
+		background-position : center;
+		background-size : cover;
+		background-attachment : fixed;
+	}
+}
+
+@media screen and (max-width: 600px) 
+{
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon 
+	{
+		position: absolute;
+		left: 0;
+		top: 0;
+		color : white;
+	}
+
+	.topnav.responsive a 
+	{
+		float: none;
+		display: block;
+		text-align: center;
+		text-decoration : none;
+	}
+	.topnav.responsive 
+	{
+		background-image : linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/main-background.jpg);
+		background-position : center;
+		background-size : cover;
+		background-attachment : fixed;
+		opacity : 0.7;
+	}
+}
+
+
+
+
+/* =========================== main content ======================== */
+
+
+
+.titel
+{
+	background-image : linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/main-background.jpg) ;
+	background-position : center;
+	background-size : cover;
+	background-attachment : fixed;
+	height : 100%;
+	width : 100%;
+	overflow : hidden;
+}
+
+.inside-titel
+{
+	margin-top : 24%;
+	padding-bottom : 49%;
+}
+
+.hello
+{
+	color : white;
+	font-size : 30pt;
+	text-align : center;
+	animation : fadeinhello 1.5s;
+	opacity : 0.3;
+	font-weight : bold;
+	font-family: 'Righteous', cursive;
+}
+
+@keyframes fadeinhello
+{
+	from{margin-top : -10%;
+		opacity : 0;}
+	to{margin-top : 0%;
+		opacity : 0.3;}
+}
+
+.name
+{
+	color : white;
+	font-size : 45pt;
+	text-align : center;
+	animation : fadein 1.5s;
+	font-family: 'Righteous', cursive;
+}
+
+.name:before
+{
+	height : 3px;
+	display : block;
+	margin : 0 auto;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	background-color:white;
+	content: " ";
+	width : 300px;
+	animation : animate 2s;
+}
+
+.name:after
+{
+	height : 3px;
+	display : block;
+	margin : 0 auto;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	background-color:white;
+	content: " ";
+	width : 300px;
+	animation : animate 2s;
+}
+
+@keyframes fadein
+{
+	from{margin-top : -10%;
+		opacity : 0;}
+	to{margin-top : 0%;
+		opacity : 1;}
+}
+
+@keyframes animate
+{
+	from {width : 0px;}
+	to {width : 300px;}
+}
+
+.it
+{
+	color : white;
+	font-size : 35pt;
+	text-align : center;
+	animation : fadeinit 1.5s;
+	opacity : 0.4;
+	font-weight : bold;
+	font-family: 'Righteous', cursive;
+}
+
+@keyframes fadeinit
+{
+	from{margin-top : -10%;
+		opacity : 0;}
+	to{margin-top : 0%;
+		opacity : 0.4;}
+}
+
+
+
+
+
+
+/* ====================about me====================== */
+
+
+
+.about
+{
+	padding-top : 7%;
+}
+
+h2:after
+{
+	height : 3px;
+	display : block;
+	margin : 0 auto;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	background-color: black;
+	content: " ";
+	width : 100px;
+}
+
+.myimg
+{
+	margin-top : 90px;
+	padding-bottom : 30px;
+}
+
+.myimg img
+{
+	width : 250px;
+	height : 250px;
+}
+
+.mydetail
+{
+	margin-top : 90px;
+	padding-bottom : 30px;
+}
+
+
+
+
+/* ====================education====================== */
+
+
+
+.education
+{
+	padding-top : 7%;
+}
+.education h2
+{
+	margin-bottom : 40px;
+}
+.link
+{
+	font-size : 10pt;
+}
+.graduation
+{
+	margin-top : 40px;
+}
+.tbl1
+{
+	margin-top : 40px;
+}
+
+
+
+/* ====================skills====================== */
+
+
+.skills
+{
+	padding-top : 7%;
+}
+.professional
+{
+	margin-top : 4%;
+	background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/skillback.jpg);
+	background-position : center;
+	background-size : cover;
+	background-attachment : fixed;
+	color : white;
+	padding-top : 4%;
+	padding-bottom : 4%;
+}
+.html
+{
+	width : 48.75%;
+	height : 3%;
+	background-color : #ddd;
+	margin-left : 15%;
+	text-align : right;
+	color : black;
+	text-shadow : 1px 1px gray;
+	font-size : 12pt;
+	padding : 0px 10px;
+}
+.professional p
+{
+	margin-top : 1%;
+	margin-left : 15%;
+	font-size : 12pt
+}
+.css
+{
+	width : 32.5%;
+	height : 3%;
+	background-color : #ddd;
+	margin-left : 15%;
+	text-align : right;
+	color : black;
+	text-shadow : 1px 1px gray;
+	font-size : 12pt;
+	padding : 0px 10px;
+}
+.js
+{
+	width : 26%;
+	height : 3%;
+	background-color : #ddd;
+	margin-left : 15%;
+	text-align : right;
+	color : black;
+	text-shadow : 1px 1px gray;
+	font-size : 12pt;
+	padding : 0px 10px;
+}
+.jq
+{
+	width : 26%;
+	height : 3%;
+	background-color : #ddd;
+	margin-left : 15%;
+	text-align : right;
+	color : black;
+	text-shadow : 1px 1px gray;
+	font-size : 12pt;
+	padding : 0px 10px;
+}
+.php
+{
+	width : 45.5%;
+	height : 3%;
+	background-color : #ddd;
+	margin-left : 15%;
+	text-align : right;
+	color : black;
+	text-shadow : 1px 1px gray;
+	font-size : 12pt;
+	padding : 0px 10px;
+}
+.java
+{
+	width : 45.5%;
+	height : 3%;
+	background-color : #ddd;
+	margin-left : 15%;
+	text-align : right;
+	color : black;
+	text-shadow : 1px 1px gray;
+	font-size : 12pt;
+	padding : 0px 10px;
+}
+.sql
+{
+	width : 44%;
+	height : 3%;
+	background-color : #ddd;
+	margin-left : 15%;
+	text-align : right;
+	color : black;
+	text-shadow : 1px 1px gray;
+	font-size : 12pt;
+	padding : 0px 10px;
+}
+
+.soft
+{
+	margin-top : 3%;
+	overflow : hidden;
+}
+.sports
+{
+	background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/sports.jpg);
+	background-position : center;
+	background-size : cover;
+	background-repeat:no-repeat;
+	background-attachment : fixed;
+	padding-top : 30%;
+	padding-bottom : 30%;
+	color : white;;
+}
+.soft p
+{
+	margin-left : 30%;
+	font-size : 35pt;
+	font-weight : bold;
+	padding-bottom : 20px;
+	
+}
+.soft p:hover
+{
+	cursor : pointer;
+	
+}
+
+.soft p:after
+{
+	height : 3px;
+	display : block;
+	margin : 0 auto;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	background-color:white;
+	content: " ";
+	width : auto;
+	margin-left : 0%;
+}
+.soft p:hover:after
+{
+	animation : slide 1s;
+	margin-left : -20%;
+}
+@keyframes slide
+{
+	from{margin-left : 0%;}
+	to{margin-left : -20%;}
+}
+
+.sportscontent
+{
+	font-size : 20pt;
+	margin-left : 35%;
+	opacity : 0.5;
+	display : none;
+}
+.travelling
+{
+	background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/travelling.jpg);
+	background-position : center;
+	background-size : cover;
+	background-repeat:no-repeat;
+	background-attachment : fixed;
+	padding-top : 30%;
+	padding-bottom : 30%;
+	color : white;
+
+}
+.music
+{
+	background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/music.jpg);
+	background-position : center;
+	background-size : cover;
+	background-repeat:no-repeat;
+	background-attachment : fixed;
+	padding-top : 30%;
+	padding-bottom : 30%;
+	color : white;
+}
+
+
+.softleft
+{
+	background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/softskillback.jpg);
+	background-position : center;
+	background-size : cover;
+	background-repeat:no-repeat;
+	background-attachment : fixed;
+	padding-top : 30%;
+	padding-bottom : 30%;
+	color : white;
+	font-size : 20pt;
+	padding-left : 7%;
+}
+.softmid
+{
+	background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/softskillback.jpg);
+	background-position : center;
+	background-size : cover;
+	background-repeat:no-repeat;
+	background-attachment : fixed;
+	padding-top : 30%;
+	padding-bottom : 22%;
+	color : white;
+	font-size : 20pt;
+	padding-left : 10%
+}
+.softright
+{
+	background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/softskillback.jpg);
+	background-position : center;
+	background-size : cover;
+	background-repeat:no-repeat;
+	background-attachment : fixed;
+	padding-top : 30%;
+	padding-bottom : 30%;
+	color : white;
+	font-size : 20pt;
+	padding-left : 20%
+}
+
+
+
+/* ====================activity====================== */
+
+
+.activity
+{
+	padding-top : 7%;
+}
+
+
+.projects
+{
+	font-size : 15pt;
+	text-align : justify;
+}
+
+.prakarsh
+{
+	font-size : 15pt;
+	text-align :center;
+	margin-bottom : 2%;
+}
+.vision
+{
+	font-size : 15pt;
+	text-align :center;
+	margin-bottom : 2%;
+}
+.industrial
+{
+	font-size : 15pt;
+	text-align :center;
+	margin-bottom : 2%;
+}
+
+
+
+/* ====================extra====================== */
+
+.extra
+{
+	border : 1px solid black;
+	box-shadow : 10px 10px 10px gray;
+	padding : 5% 5%;
+}
+
+/* ====================contact====================== */
+
+.contact
+{
+	padding-top : 7%;
+}
+.form
+{
+	font-size : 15pt;
+	margin-top : 3%;
+}
+.form input
+{
+	margin-top : 2%;
+}
+.form textarea
+{
+	margin-top : 2%;
+}
+
+.social
+{
+	margin-top : 10%;
+	margin-left : 3%;
+}
+
+
+
+/* ====================footer====================== */
+
+.footer
+{
+	bottom : 0;
+	padding-top : 5%;
+	padding-bottom : 5%;
+	background-image : linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/main-background.jpg);
+	background-position : center;
+	background-size : cover;
+	background-attachment : fixed;
+	width : 100%;
+	margin-top : 15%;
+}
+.footer h3
+{
+	color : white;
+}
+.footer h3 a
+{
+	color : white;
+}
+
+
+
+
